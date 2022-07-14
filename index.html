@@ -18,20 +18,20 @@
     <header>
     <nav>
         <div class="logo">
-            <h4>LOGO</h4>
+            <i class='bx bx-code-block'></i>
         </div>
         <ul class="nav-links">
             <li>
                 <a href="#">Home</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="#about">About Me</a>
             </li>
             <li>
-                <a href="#">Work</a>
+                <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-                <a href="#">Projects</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
         <div class="burguer">
@@ -45,24 +45,31 @@
         <h1>CHRISTIAN MENDEZ</h1>
         <h2 class="front-end">FRONT-END WEB DEVELOPER 👨‍💻</h2>
         <p>I'm a front-end developer Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsa ipsum commodi maxime dolorum dolores quis tempora.</p>
-        <button>CHECK OUT MY PORTFOLIO!</button>
+        <button><a href="#portfolio">CHECK OUT MY PORTFOLIO!</a></button>
     </div>
     </header>   
     <main>
-        <section class="aboutMe-section">
+        <section id="about" class="aboutMe-section">
             <div class="aboutMe-info">
-                <h3>ABOUT ME</h3>
-                <P><i class='bx bx-expand-horizontal bx-burst' ></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iste perferendis nulla deleniti ut dicta delectus error consequatur non? Dignissimos optio dolores voluptatem pariatur consequatur, natus nobis fugiat ipsa beatae! <i class='bx bx-code-alt bx-tada bx-burst' ></i></P>
-                <div class="profilePic-container">
-                    <img src="./assets/img/photo.jpg" alt="">
+                <div class="aboutMe-text">
+                    <h3>ABOUT ME</h3>
+                    <P><i class='bx bx-expand-horizontal bx-burst' ></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iste perferendis nulla deleniti ut dicta delectus error consequatur non? Dignissimos optio dolores voluptatem pariatur consequatur, natus nobis fugiat ipsa beatae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. <i class='bx bx-code-alt bx-tada bx-burst' ></i></P>
+                    <P><i class='bx bx-expand-horizontal bx-burst' ></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iste perferendis nulla deleniti ut dicta delectus error consequatur non? Dignissimos optio dolores voluptatem pariatur consequatur, natus nobis fugiat ipsa beatae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. <i class='bx bx-code-alt bx-tada bx-burst' ></i></P>
                 </div>
-                <button>DOWNLOAD CV</button>
+                <div class="aboutMe-picture">
+                    <div class="profilePic-container">
+                        <img src="./assets/img/photo.jpg" alt="">
+                    </div>
+                    <button><a href="./assets/PruebaCV.txt" download="Prueba CV">DOWNLOAD CV</a></button>
+                </div>
             </div>
         </section>
         <section class="skills-section">
             <div class="skills-info">
-                <h3>SKILLS</h3>
-                <p><i class='bx bx-expand-horizontal bx-burst' ></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nostrum unde illo iste. <i class='bx bx-code-alt bx-tada bx-burst' ></i></p>
+                <div class="skills-text">
+                    <h3>SKILLS</h3>
+                    <p><i class='bx bx-expand-horizontal bx-burst' ></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nostrum unde illo iste. <i class='bx bx-code-alt bx-tada bx-burst' ></i></p>
+                </div>
                 <div class="skills-card-section">
                     <div class="skills-card ">
                         <i class='bx bxl-html5 skill1 html5' ></i>
@@ -84,10 +91,12 @@
             </div>
             
         </section>
-        <section class="portfolio-section">
+        <section id="portfolio" class="portfolio-section">
             <div class="portfolio-info">
-                <h3>PORTFOLIO</h3>
-                <p><i class='bx bx-link' ></i> Check out the projects I've worked on: </p>
+                <div class="portfolio-text">
+                    <h3>PORTFOLIO</h3>
+                    <p><i class='bx bx-link' ></i> Check out the projects I've worked on: </p>
+                </div>
                 <div class="portfolio-grid">
                     <div class="project">
                         <i class='bx bx-folder'></i>
@@ -122,6 +131,7 @@
         <section class="learning-section">
             <div class="learning-info">
                 <h3>STUDIES AND LEARNING</h3>
+                <p><i class='bx bx-link' ></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam facilis hic voluptate, deleniti in quos, molestias cumque, corrupti eaque error distinctio vel doloribus dolorum.</p>
                 <div class="studies-container">
                     <div class="studies-card">
                         <div class="img-card">
@@ -129,12 +139,12 @@
                         </div>
                         <h4>ACADEMLO</h4>
                         <span>2022</span>
-                        <p>FULL STACK PROGRAM</p>
+                        <p id="academlo-text">FULL STACK PROGRAM</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact-section">
+        <section id="contact" class="contact-section">
             <div class="contact-info">
             <div class="title-contact">
                 <h3>CONTACT</h3>
@@ -147,11 +157,11 @@
     <footer>
         <div class="footer-container">
             <div class="social-media-container">
-                <i class='bx bxl-github media'></i>
-                <i class='bx bxl-linkedin-square media' ></i>
-                <i class='bx bxl-gmail media' ></i>
+                <a href="https://github.com/chrismendez11" target="_blank"><i class='bx bxl-github media'></i></a>
+                <a href="https://www.linkedin.com/in/christian-mendez-b8576822b/" target="_blank"><i class='bx bxl-linkedin-square media' ></i></a>
+                <a href="https://app.netlify.com/teams/chrisliner11/overview" target="_blank"><i class='bx bxl-netlify media'></i></a>
             </div>
-            <p>Built by Christian Mendez</p>
+            <p>Webpage Built by Christian Mendez</p>
             <p>2022</p>
         </div>
     </footer>
