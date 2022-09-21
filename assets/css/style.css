@@ -158,11 +158,64 @@ nav {
     gap: 30px;
 }
 
+/* NAME ANIMATION */
+:root {
+    --typewriterSpeed: 4s;
+    --typewriterCharacters: 20;
+  }
 h1 {
+    font-size: 6.0rem;
+    position: relative;
+    font-family: "Source Code Pro", monospace;
     color: var(--color-h1);
-    font-size: 6.4rem;
-}
+    width: max-content;
+  }
+  
+  h1::before,
+  h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  h1::before {
+    background: #0e141b;
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
+  }
+  
+  h1::after {
+    width: 0.1em;
+    background: var(--color-h1);
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
 
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* NAME DONE */
+ 
 .head-container h2 {
     color: var(--color-red);
     font-size: 2.4rem;
@@ -217,6 +270,7 @@ h1 {
     }
     h1 {
         font-size: 4.8rem;
+        width: auto;
     }
     .head-container h2 {
         font-size: 1.8rem;
@@ -319,11 +373,15 @@ main {
 }
 
 .btn-cv a {
+    font-family: 'Nunito', sans-serif;
     text-decoration: none;
     color: var(--color-h1);
     font-size: 1.6rem;
     font-weight: 400;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .btn-cv a:hover {
